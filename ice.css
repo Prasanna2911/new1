@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-y: hidden;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center   
+}
+.navbar {
+    margin:0px 20px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px;
+    font-size:20px;
+    
+}
+.navbar ul li a:hover{
+    color:#017143;
+}
+.navbar ul li a{
+    color:#333;
+    
+}
+.logo img{
+    height:70px;
+    max-width:60px;
+    
+}
+.logo{
+    padding:10px;
+    margin-left: 10px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content .text h2 span{
+    color:#017143;
+}
+.content .text{
+    max-width:600px;
+    margin-left: 30px;
+}
+.content .text h2{
+    font-size:4em;
+    margin-bottom: 10px;
+    
+}
+.content .text p{
+    color:#333;
+    margin-bottom:20px;
+    
+}
+.content .text a{
+    color:#fff;
+    font-weight: 500;
+    border:1px double #017143;
+    padding:6px;
+    background-color: #017143;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    text-decoration: none;    
+}
+.content .imgbox{
+    max-width: 600px;
+}
+.imgbox img{
+    height:500px;  
+}
+.thumb{
+    position: absolute;
+    left:40%;
+    bottom:20px;
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.thumb li:hover {
+    transform: translateY(-13px);
+}
+.thumb li img{
+    max-width:80px;
+    padding:10px;
+}
+.circle{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: #017143;
+    top:0;
+    left:0;
+    clip-path: circle(600px at right 720px);
+    z-index: -1;
+}
+.soc li{
+    list-style: none;  
+    font-weight: 900;
+    font-size:22px;
+    color:black;
+    margin:20px;
+    padding:10px;
+    cursor: pointer; 
+    filter:invert(100%)
+      
+}
+@media (max-width:450px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navbar ul li{
+        font-size:14px;
+        padding: 5px;
+           
+    }
+    .navbar ul{
+        margin:0;
+        position: relative;  
+    }
+    .content .text h2{
+        font-size:30px;
+        
+    }
+    .content .text a{
+        font-size: small;
+        margin-bottom: 8px;
+    }
+    .content{
+        flex-direction: column;
+        margin-top:30px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .circle{
+        clip-path: circle(250px at center bottom);
+    }
+    .imgbox img{
+        height:300px;
+    }
+    .content .text p{
+        font-size: 15px;
+        
+    }
+    .thumb{
+        position: absolute;
+        
+    }
+    .thumb li img{
+        max-width:60px;
+        position: relative;
+        top:40px;
+        right:146px;
+    }
+    .soc{
+        position: absolute;
+        top:300px;
+        left:310px;
+        background-color: #017143;   
+    }
+    .soc li{
+        padding:6px;
+        margin:4px;
+        filter: invert(90%);   
+    }
+}
+
+
+
+

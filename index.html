@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="ice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+<body>
+    <div class="container">
+     <div class="circle"></div>
+      <header>
+        <div class="logo">
+            <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_j0Esml8fa" alt="LOGO">
+        </div>
+        <div class="navbar">
+            <ul class="ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">product</a></li>
+                <li><a href="">About us </a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="text">
+            <h2>it's not just coffee<br>it's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ipsum amet consequatur optio! In delectus nulla quis dicta illo rem totam non ullam fugit, temporibus libero modi quasi possimus labore?</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgbox">
+            <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_tt_0jlEy-" alt="green" class="Starbucks">
+        </div>
+        <sidebar>
+         <ul class="thumb">
+            <li> <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_tt_0jlEy-" alt="green"  onclick="imageslider('https://ik.imagekit.io/d3kzbpbila/thejashari_tt_0jlEy-');bgchange('#017143')"></li>
+            <li><img src= "https://ik.imagekit.io/d3kzbpbila/thejashari_GSC_3Et4q" alt="Light rose" onclick="imageslider('https://ik.imagekit.io/d3kzbpbila/thejashari_GSC_3Et4q');bgchange('#eb7495')"></li>
+            <li> <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_bZYRZyToul" alt="Rose" onclick="imageslider('https://ik.imagekit.io/d3kzbpbila/thejashari_bZYRZyToul');bgchange('#d752b1')"></li>
+         </ul>
+         <ul class="soc">
+          <li><i class="fa-brands fa-instagram" ></i></li>
+          <li><i class="fa-brands fa-whatsapp" ></i></li>
+          <li><i class="fa-brands fa-twitter" ></i></li>
+         </ul>
+     </sidebar>
+   
+    </div> 
+</div>
+<script>
+    function imageslider(IMG){
+        document.querySelector(".Starbucks").src = IMG;
+        
+
+    }
+    function bgchange(bg){
+        let color = document.querySelector(".circle");
+        color.style.background = bg;
+        
+
+    }
+    /*
+    let hamburger = document.querySelector(".hamburger");
+    let ul = document.querySelector(".ul");
+    let bar = document.querySelector(".bar")
+    hamburger.addEventListener("click",() => {
+    hamburger.classList.toggle("active");
+    ul.classList.toggle("active"); 
+    
+}) */
+
+</script>
+
+</body>
+</html>
